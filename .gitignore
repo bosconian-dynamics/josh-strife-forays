@@ -1,0 +1,6 @@
+/build/
+/dependencies/
+/logs/
+.env
+/*.code-workspace
+/ahortator/cache/

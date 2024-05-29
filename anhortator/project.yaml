@@ -1,0 +1,93 @@
+# yaml-language-server: $schema=./project.schema.json
+
+# Configuration for the Anhortator project.
+
+name: "Josh Strife Forays"
+slug: josh-strife-forays
+filehost: 'https://files.anhortator.com/projects/josh-strife-forays/'
+
+# Waveform data configuration.
+#
+# The stream audio is too massive to tax users' browsers with generating it on the fly, so we'll
+# pregenerate the waveforms and serve them from this repository.
+#
+# TODO: Anhortator-CLI should be able to generate these waveforms automatically and locally for
+#       serve-from-repo strategy.
+# TODO: A remote server/worker acting on long-running tasks from a queue should be able to generate
+#       these waveforms and upload them to the filehost as an alternative strategy.
+waveforms:
+  strategy: repo
+  path: 'waveforms/'
+  sampleRate: 44100
+  samplesPerPixel: 4096
+  bits: 8
+  multiChannel: false
+
+# Original audio sources.
+tracks:
+  - name: "Morrowind - Part 1"
+    slug: mw-p1
+    type: video
+    source:
+      provider: youtube
+      id: tQEbThpTyMA
+  - name: "Morrowind - Part 2"
+    slug: mw-p2
+    type: video
+    source:
+      provider: youtube
+      id: 7lWPo59LgXI
+  - name: "Morrowind - Part 3"
+    slug: mw-p3
+    type: video
+    source:
+      provider: youtube
+      id: e8JCZGKShqg
+  - name: "Morrowind - Part 4"
+    slug: mw-p4
+    type: video
+    source:
+      provider: youtube
+      id: mYDz7drcN2A
+  - name: "Morrowind - Part 5"
+    slug: mw-p5
+    type: video
+    source:
+      provider: youtube
+      id: OaW16j3_IF8
+  - name: "Morrowind - Part 6"
+    slug: mw-p6
+    type: video
+    source:
+      provider: youtube
+      id: QWKu_NnsKsc
+  - name: "Morrowind - Part 7"
+    slug: mw-p7
+    type: video
+    source:
+      provider: youtube
+      id: zQYbNVsiX_k
+  - name: "Morrowind - Part 8"
+    slug: mw-p8
+    type: video
+    source:
+      provider: youtube
+      id: 4h_26gUg9es
+  - name: "Morrowind - Part 9"
+    slug: mw-p9
+    type: video
+    source:
+      provider: youtube
+      id: a5jPc07E2sw
+  - name: "Morrowind - Part 10"
+    slug: mw-p10
+    type: video
+    source:
+      provider: youtube
+      id: YfPWa-cwyao
+  - name: "Morrowind - Part 11 (Final)"
+    slug: mw-p11
+    type: video
+    source:
+      provider: youtube
+      id: OxdjklrDOiU
